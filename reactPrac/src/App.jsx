@@ -5,15 +5,26 @@ import './App.css'
 import { Counter } from './counter'
 import { Form } from './form'
 import { TodoApp } from './Reducer/todos'
+import { Navbar } from './ContextApi/components/Navbar'
+import { ProtectedContent } from './ContextApi/components/ProtectedContent'
+import { UserDisplay } from './ContextApiWithReducer/component/UserDisplayComponent'
+
 
 function App() {
   const [count, setCount] = useState(0)
-
+  console.log("App component rendered")
   return (
     <>
       {/* <Counter></Counter> */}
       {/* <Form/> */}
-      <TodoApp/>
+
+
+      {/* <TodoApp/> */} 
+
+
+{/* <Navbar/>
+<ProtectedContent/> */}
+<UserDisplay/>
     </>
   )
 }
