@@ -10,8 +10,10 @@ import { ProtectedContent } from './ContextApi/components/ProtectedContent'
 import { UserDisplay } from './ContextApiWithReducer/component/UserDisplayComponent'
 import { ReduxCounter } from './CounterUsingReduxToolkit/Counter'
 import { ReduxPosts } from './AsynchronousReduxExample/PostsComponent'
-
-
+import { MainRouter } from './Router/MainRouter'
+import { NavBar } from './Router/Navbar'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { AuthProvider } from './Router/AuthContext/authContext'
 function App() {
   const [count, setCount] = useState(0)
   console.log("App component rendered")
@@ -29,7 +31,17 @@ function App() {
 {/* <UserDisplay/> */}
 {/* <ReduxCounter/> */}
 
-<ReduxPosts/>
+{/* <ReduxPosts/> */}
+
+{/* example of react router */}
+<AuthProvider>
+<Router>
+<NavBar/>
+<MainRouter/>
+</Router>
+</AuthProvider>
+
+
     </>
   )
 }
