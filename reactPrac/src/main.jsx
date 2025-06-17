@@ -5,7 +5,8 @@ import App from './App.jsx'
 import { ThemeProvider } from './ContextApi/contexts/ThemeContexts'
 import { AuthProvider } from './ContextApi/contexts/AuthContext'
 import { UserProvider } from './ContextApiWithReducer/contexts/UserContext.jsx'
-
+import {Provider} from 'react-redux'
+import { store } from './CounterUsingReduxToolkit/store.js'
 // use this for all the normal state managementexample
 // createRoot(document.getElementById('root')).render(
 //   <StrictMode>
@@ -29,11 +30,21 @@ import { UserProvider } from './ContextApiWithReducer/contexts/UserContext.jsx'
 // )
 
 
-// Use this for context API(reducer based) state management example with AuthProvider
+// Use this for context API(reducer based) state management example.
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <UserProvider>
+//     <App />
+//     </UserProvider>
+//   </StrictMode>
+// )
+
+// Use this for redux toolkit state management example (Counter--synchronous)
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UserProvider>
+<Provider store={store}>
+
     <App />
-    </UserProvider>
+</Provider>
   </StrictMode>
 )
