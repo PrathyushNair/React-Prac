@@ -6,7 +6,7 @@ import { ThemeProvider } from './ContextApi/contexts/ThemeContexts'
 import { AuthProvider } from './ContextApi/contexts/AuthContext'
 import { UserProvider } from './ContextApiWithReducer/contexts/UserContext.jsx'
 import {Provider} from 'react-redux'
-import { store } from './CounterUsingReduxToolkit/store.js'
+import { store } from './store.js'
 // use this for all the normal state managementexample
 // createRoot(document.getElementById('root')).render(
 //   <StrictMode>
@@ -43,7 +43,6 @@ import { store } from './CounterUsingReduxToolkit/store.js'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 <Provider store={store}>
-
     <App />
 </Provider>
   </StrictMode>

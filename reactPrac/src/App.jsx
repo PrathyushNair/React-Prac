@@ -9,6 +9,7 @@ import { Navbar } from './ContextApi/components/Navbar'
 import { ProtectedContent } from './ContextApi/components/ProtectedContent'
 import { UserDisplay } from './ContextApiWithReducer/component/UserDisplayComponent'
 import { ReduxCounter } from './CounterUsingReduxToolkit/Counter'
+import { ReduxPosts } from './AsynchronousReduxExample/PostsComponent'
 
 
 function App() {
@@ -26,7 +27,9 @@ function App() {
 {/* <Navbar/>
 <ProtectedContent/> */}
 {/* <UserDisplay/> */}
-<ReduxCounter/>
+{/* <ReduxCounter/> */}
+
+<ReduxPosts/>
     </>
   )
 }
