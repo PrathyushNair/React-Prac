@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
 import './App.css'
 import { Counter } from './counter'
 import { Form } from './form'
@@ -14,8 +12,9 @@ import { MainRouter } from './Router/MainRouter'
 import { NavBar } from './Router/Navbar'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { AuthProvider } from './Router/AuthContext/authContext'
+import { PaginationDataDisplay } from './Pagination/PaginationDataDisplay'
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
   console.log("App component rendered")
   return (
     <>
@@ -34,14 +33,14 @@ function App() {
 {/* <ReduxPosts/> */}
 
 {/* example of react router */}
-<AuthProvider>
+{/* <AuthProvider>
 <Router>
 <NavBar/>
 <MainRouter/>
 </Router>
-</AuthProvider>
+</AuthProvider> */}
 
-
+<PaginationDataDisplay/>
     </>
   )
 }
