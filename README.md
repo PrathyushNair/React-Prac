@@ -1,0 +1,3 @@
+The components are maintained within src folder. Let's keep it that way. You may test you components by importing them in to App.ts. Then comment it out and move forward towards building the next component...
+Please use Typescript.
+Comments are welcome as they would help us in understanding the overall code.
