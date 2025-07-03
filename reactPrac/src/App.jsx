@@ -13,6 +13,9 @@ import { NavBar } from './Router/Navbar'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { AuthProvider } from './Router/AuthContext/authContext'
 import { PaginationDataDisplay } from './Pagination/PaginationDataDisplay'
+import { LazyComponentLoader } from './Lazyloading/LazyComponentLoader'
+import { InfiniteScroll } from './InfiniteScroll/InfiniteScroll'
+import { SearchComponent } from './SearchWithDebounce/SeacrchComponent'
 function App() {
   // const [count, setCount] = useState(0)
   console.log("App component rendered")
@@ -39,8 +42,11 @@ function App() {
 <MainRouter/>
 </Router>
 </AuthProvider> */}
-
-<PaginationDataDisplay/>
+{/* 
+<PaginationDataDisplay/> */}
+{/* <LazyComponentLoader/> */}
+{/* <InfiniteScroll/> */}
+<SearchComponent/>
     </>
   )
 }
