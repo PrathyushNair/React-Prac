@@ -16,6 +16,7 @@ import { PaginationDataDisplay } from './Pagination/PaginationDataDisplay'
 import { LazyComponentLoader } from './Lazyloading/LazyComponentLoader'
 import { InfiniteScroll } from './InfiniteScroll/InfiniteScroll'
 import { SearchComponent } from './SearchWithDebounce/SeacrchComponent'
+import { ProgressBar } from './ProgressBar/ProgressBar'
 function App() {
   // const [count, setCount] = useState(0)
   console.log("App component rendered")
@@ -46,7 +47,8 @@ function App() {
 <PaginationDataDisplay/> */}
 {/* <LazyComponentLoader/> */}
 {/* <InfiniteScroll/> */}
-<SearchComponent/>
+{/* <SearchComponent/> */}
+{/* <ProgressBar/> */}
     </>
   )
 }

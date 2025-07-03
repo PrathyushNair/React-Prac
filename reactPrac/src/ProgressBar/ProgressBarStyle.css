@@ -1,0 +1,26 @@
+body{
+ width:100%
+}
+#root{
+
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.outerDiv{
+border:1px solid red;
+width:60%;
+position:fixed;
+
+height:12px;
+border-radius: 20px;
+}
+
+.progressIndicator{
+    border:1px solid green;
+    height:10px;
+    border-radius: 20px;
+    background-color: green;
+}
