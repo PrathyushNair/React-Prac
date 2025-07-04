@@ -1,0 +1,68 @@
+.toDoRoot{
+    width:100%;
+    height:auto;
+    position: absolute;
+    top:0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+    height:4em
+
+}
+.title{
+    height:3em;
+    background-color: bisque;
+    width:30%;
+    top:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-size: 2em;
+    border-radius: 10px;
+}
+.wipdiv{
+    top:100%;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color:black;
+    left:0%;
+    height:100em;
+    z-index: 1000;
+    background-color: rgb(126, 126, 123);
+}
+.donediv{
+    top:100%;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color:black;
+    right:0;
+    height:100em;
+    z-index: 1000;
+    background-color:  rgb(126, 126, 123);
+}
+.wip{
+    width:100%;
+    background-color: bisque;
+    height:5em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 1000;
+}
+.done{
+    width:100%;
+    background-color: bisque;
+    height:5em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 1000;
+}
