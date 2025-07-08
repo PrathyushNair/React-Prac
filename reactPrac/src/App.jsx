@@ -18,6 +18,7 @@ import { InfiniteScroll } from './InfiniteScroll/InfiniteScroll'
 import { SearchComponent } from './SearchWithDebounce/SeacrchComponent'
 import { ProgressBar } from './ProgressBar/ProgressBar'
 import { StarReview } from './StarReviewComponent/starReviewComponent'
+import { OtpMainComponent } from './OtpComponent/otpMainComponent'
 function App() {
   // const [count, setCount] = useState(0)
   console.log("App component rendered")
@@ -50,7 +51,10 @@ function App() {
 {/* <InfiniteScroll/> */}
 {/* <SearchComponent/> */}
 {/* <ProgressBar/> */}
-<StarReview/>
+{/* <StarReview/> */}
+{/* <PluralsightNavbar/> */}
+<OtpMainComponent/>
+
     </>
   )
 }
