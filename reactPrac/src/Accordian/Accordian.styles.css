@@ -1,0 +1,35 @@
+
+.accordianRootDiv{
+    border:2px solid black;
+    position:fixed;
+    width:80%;
+    background-color: white;
+    color:black;
+}
+
+.accordianLabelDiv{
+    border:2px solid black;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.clickButton:hover{
+    cursor: pointer;
+}
+.accordionChildrenContainer {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+    opacity: 2;
+  }
+  
+  .accordionChildrenContainer.open {
+    max-height: 500px; 
+
+    opacity: 1;
+  }
+  
+  .accordianChildContainer {
+    padding: 1rem;
+  }
