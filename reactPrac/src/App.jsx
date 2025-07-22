@@ -20,6 +20,7 @@ import { ProgressBar } from "./ProgressBar/ProgressBar";
 import { StarReview } from "./StarReviewComponent/starReviewComponent";
 import { OtpMainComponent } from "./OtpComponent/otpMainComponent";
 import { Accordian } from "./Accordian/Accordian";
+import { MainSlider } from "./ImageCarousel/ImageCarousel";
 function App() {
   // const [count, setCount] = useState(0)
   console.log("App component rendered");
@@ -53,7 +54,7 @@ function App() {
       {/* <StarReview/> */}
       {/* <PluralsightNavbar/> */}
       {/* <OtpMainComponent/> */}
-      <Accordian>
+      {/* <Accordian>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -63,7 +64,9 @@ function App() {
         of Letraset sheets containing Lorem Ipsum passages, and more recently
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
-      </Accordian>
+      </Accordian> */}
+
+      <MainSlider/>
     </>
   );
 }
