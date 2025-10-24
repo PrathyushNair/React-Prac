@@ -1,26 +1,28 @@
 // import { useState } from 'react'
 import "./App.css";
-import { Counter } from "./counter";
-import { Form } from "./form";
-import { TodoApp } from "./Reducer/todos";
-import { Navbar } from "./ContextApi/components/Navbar";
-import { ProtectedContent } from "./ContextApi/components/ProtectedContent";
-import { UserDisplay } from "./ContextApiWithReducer/component/UserDisplayComponent";
-import { ReduxCounter } from "./CounterUsingReduxToolkit/Counter";
-import { ReduxPosts } from "./AsynchronousReduxExample/PostsComponent";
-import { MainRouter } from "./Router/MainRouter";
-import { NavBar } from "./Router/Navbar";
-import { BrowserRouter as Router } from "react-router-dom";
-import { AuthProvider } from "./Router/AuthContext/authContext";
-import { PaginationDataDisplay } from "./Pagination/PaginationDataDisplay";
-import { LazyComponentLoader } from "./Lazyloading/LazyComponentLoader";
-import { InfiniteScroll } from "./InfiniteScroll/InfiniteScroll";
-import { SearchComponent } from "./SearchWithDebounce/SeacrchComponent";
-import { ProgressBar } from "./ProgressBar/ProgressBar";
-import { StarReview } from "./StarReviewComponent/starReviewComponent";
-import { OtpMainComponent } from "./OtpComponent/otpMainComponent";
-import { Accordian } from "./Accordian/Accordian";
-import { MainSlider } from "./ImageCarousel/ImageCarousel";
+import {Tablecomponent } from "./Playground/playground";
+// import { Counter } from "./counter";
+// import { Form } from "./form";
+// import { TodoApp } from "./Reducer/todos";
+// import { Navbar } from "./ContextApi/components/Navbar";
+// import { ProtectedContent } from "./ContextApi/components/ProtectedContent";
+// import { UserDisplay } from "./ContextApiWithReducer/component/UserDisplayComponent";
+// import { ReduxCounter } from "./CounterUsingReduxToolkit/Counter";
+// import { ReduxPosts } from "./AsynchronousReduxExample/PostsComponent";
+// import { MainRouter } from "./Router/MainRouter";
+// import { NavBar } from "./Router/Navbar";
+// import { BrowserRouter as Router } from "react-router-dom";
+// import { AuthProvider } from "./Router/AuthContext/authContext";
+// import { PaginationDataDisplay } from "./Pagination/PaginationDataDisplay";
+// import { LazyComponentLoader } from "./Lazyloading/LazyComponentLoader";
+// import { InfiniteScroll } from "./InfiniteScroll/InfiniteScroll";
+// import { SearchComponent } from "./SearchWithDebounce/SeacrchComponent";
+// import { ProgressBar } from "./ProgressBar/ProgressBar";
+// import { StarReview } from "./StarReviewComponent/starReviewComponent";
+// import { OtpMainComponent } from "./OtpComponent/otpMainComponent";
+// import { Accordian } from "./Accordian/Accordian";
+// import { MainSlider } from "./ImageCarousel/ImageCarousel";
+import { TableView } from "./TableWithInfiniteScroll/tableComponent";
 function App() {
   // const [count, setCount] = useState(0)
   console.log("App component rendered");
@@ -66,7 +68,10 @@ function App() {
         of Lorem Ipsum.
       </Accordian> */}
 
-      <MainSlider/>
+      {/* <MainSlider/> */}
+      {/* <TableView/> */}
+      {/* <RouterComponent/> */}
+      <Tablecomponent/>
     </>
   );
 }

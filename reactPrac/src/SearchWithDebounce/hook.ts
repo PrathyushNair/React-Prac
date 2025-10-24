@@ -18,7 +18,7 @@ export function useDebounce(val,delay){
 
 export function useDebounceForFunction(fn,delay){
     let timerId=React.useRef<ReturnType<typeof setTimeout>|null>(null)
-    const debounceFunction=React.useCallback((...args)=>{
+    const debounceFunction=React.useCallback((...args: any)=>{
         if(timerId.current){
             clearTimeout(timerId.current)
         }

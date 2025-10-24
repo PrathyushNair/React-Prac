@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 // import { v4 as uuidv4 } from "uuid";
 import "./OtpMainComponentStyle.css";
 export function OtpMainComponent() {
